@@ -1,0 +1,23 @@
+/* custom colors */
+:root {
+  /* global light mode*/
+  --background-color: #f0f6fc;
+  --text-color-icons: #24292e;
+  --color-buttons-links: #28a745;
+  --hyper-links: #0366d6;
+  --secondary-buttons: #6f42c1;
+  --warning-color: #ffd33d;
+  --error-color: #cb2431;
+  --custom: #626262;
+}
+
+body:has(#darkmode:checked) {
+  --background-color: #161b22;
+  --text-color-icons: #f0f6fc;
+  --color-buttons-links: #28a745;
+  --hyper-links: #0366d6;
+  --secondary-buttons: #6f42c1;
+  --warning-color: #ffd33d;
+  --error-color: #cb2431;
+  --custom: #818181;
+}
