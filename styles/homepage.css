@@ -1,0 +1,30 @@
+/* HOMEPAGE */
+#homepage {
+  height: 100vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+input[type="text"] {
+  border: solid 2px var(--custom);
+  border-radius: 3px 3px 0;
+  padding: 0.5em;
+}
+
+button[type="submit"] {
+  position: absolute;
+  background: var(--color-buttons-links);
+  transform: translateX(-2px);
+  border-radius: 0 3px 3px 0;
+  padding: 0.5em;
+  color: var(--text-color-icons);
+  border: solid 2px var(--custom);
+}
+
+/* searchbar div to put button and search together*/
+.searchbar {
+  transform: translateX(-1.7em);
+}
