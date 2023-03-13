@@ -1,0 +1,24 @@
+/* imports */
+@import url("./custom.css");
+@import url("./homepage.css");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* show or hide with js for example for p .feedback */
+.hidden {
+  display: hidden;
+}
+
+h1 {
+  color: var(--text-color-icons);
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color-icons);
+}
