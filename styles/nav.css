@@ -1,9 +1,10 @@
 /* dark / light mode button */
+/* for darkmode colors look in custom.css */
 nav {
   position: absolute;
   width: 100vw;
   /* background-color: red; */
-  padding: 1em 2em;
+  padding: 1em 1.5em;
   display: flex;
   justify-content: flex-end;
 }
@@ -16,20 +17,20 @@ nav > input {
   appearance: none;
   background-color: var(--switch-bg);
   cursor: pointer;
-  border-radius: 1em;
+  border-radius: 2em;
   box-shadow: var(--switch-box-shadow);
-  width: 2em;
-  height: 2em;
+  width: 3em;
+  height: 3em;
 }
 
 nav > input::before {
   content: "";
   background-color: var(--background-color) !important ;
-  width: 0.6em;
-  height: 1em;
+  width: 1em;
+  height: 2em;
   position: absolute;
   top: 1.7em;
-  right: 2.9em;
+  right: 2.3em;
   border-radius: 0 1em 1em 0;
   z-index: 2;
 }
