@@ -1,6 +1,7 @@
 /* imports */
 @import url("./custom.css");
 @import url("./homepage.css");
+@import url("./nav.css");
 
 * {
   box-sizing: border-box;
@@ -19,6 +20,7 @@ h1 {
 }
 
 body {
+  transition: 0.2s ease-in-out;
   background: var(--background-color);
   color: var(--text-color-icons);
 }
