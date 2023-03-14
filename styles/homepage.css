@@ -8,20 +8,29 @@
   gap: 1rem;
 }
 
+/* search bar */
+input {
+  transition: 0.2s ease-in-out;
+}
+
 input[type="text"] {
-  border: solid 2px var(--custom);
-  border-radius: 3px 3px 0;
+  border: solid 2px var(--lines);
+  border-radius: 6px 0 0 6px;
   padding: 0.5em;
+  background: var(--background-input);
 }
 
 button[type="submit"] {
   position: absolute;
   background: var(--color-buttons-links);
   transform: translateX(-2px);
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 6px 6px 0;
   padding: 0.5em;
-  color: var(--text-color-icons);
-  border: solid 2px var(--custom);
+  color: var(--text-buttons-links);
+  border: solid var(--lines-button);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 
 /* searchbar div to put button and search together*/
