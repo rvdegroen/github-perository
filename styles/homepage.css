@@ -18,6 +18,11 @@ input[type="text"] {
   border-radius: 6px 0 0 6px;
   padding: 0.5em;
   background: var(--background-input);
+  color: var(--text-color-icons);
+}
+
+input[type="text"]:focus {
+  outline: none;
 }
 
 button[type="submit"] {
