@@ -38,7 +38,7 @@ nav > input::before {
 }
 
 nav > input:hover {
-  opacity: 80%;
+  background-color: var(--color-buttons-hover);
 }
 
 nav > input:active {
