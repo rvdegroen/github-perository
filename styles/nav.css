@@ -25,10 +25,6 @@ nav > input {
   height: 3em;
 }
 
-nav > input:hover {
-  opacity: 80%;
-}
-
 /* dark / light mode button: half circle on top*/
 nav > input::before {
   content: "";
@@ -39,4 +35,12 @@ nav > input::before {
   top: 1.7em;
   right: 2.3em;
   border-radius: 0 1em 1em 0;
+}
+
+nav > input:hover {
+  opacity: 80%;
+}
+
+nav > input:active {
+  opacity: 80%;
 }
