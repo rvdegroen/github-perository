@@ -42,5 +42,9 @@ nav > input:hover {
 }
 
 nav > input:active {
+  background-color: var(--color-buttons);
+}
+
+nav > input:active {
   opacity: 80%;
 }
