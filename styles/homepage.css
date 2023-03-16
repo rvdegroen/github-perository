@@ -50,3 +50,9 @@ button[type="submit"]:hover {
 .searchbar {
   transform: translateX(-2em);
 }
+
+/* error message */
+#error__message {
+  color: var(--error-color);
+  font-weight: 600;
+}
