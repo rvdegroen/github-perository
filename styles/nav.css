@@ -1,5 +1,6 @@
-/* dark / light mode button */
 /* for darkmode colors look in custom.css */
+
+/* nav */
 nav {
   position: absolute;
   width: 100vw;
@@ -9,6 +10,7 @@ nav {
   justify-content: flex-end;
 }
 
+/* dark / light mode button */
 nav > input {
   outline: none;
   border: none;
@@ -23,6 +25,11 @@ nav > input {
   height: 3em;
 }
 
+nav > input:hover {
+  opacity: 80%;
+}
+
+/* dark / light mode button: half circle on top*/
 nav > input::before {
   content: "";
   background-color: var(--background-color) !important ;
