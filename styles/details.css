@@ -1,0 +1,10 @@
+#details__page > div {
+	display: flex;
+	flex-direction: column;
+	padding: 2em;
+	gap: 0.5em;
+}
+
+#details__page .searchbar {
+	transform: translateX(0em);
+}

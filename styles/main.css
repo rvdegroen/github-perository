@@ -2,25 +2,26 @@
 @import url("./custom.css");
 @import url("./homepage.css");
 @import url("./nav.css");
+@import url("./details.css");
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: "Work Sans", sans-serif;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: "Work Sans", sans-serif;
 }
 
 /* show or hide with js for example for p .feedback */
 .hidden {
-  display: none !important;
+	display: none !important;
 }
 
 h1 {
-  color: var(--text-color-icons);
+	color: var(--text-color-icons);
 }
 
 body {
-  transition: 0.2s ease-in-out;
-  background: var(--background-color);
-  color: var(--text-color-icons);
+	transition: 0.2s ease-in-out;
+	background: var(--background-color);
+	color: var(--text-color-icons);
 }
