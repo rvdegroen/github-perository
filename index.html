@@ -29,19 +29,17 @@
 					<input type="text" placeholder="Github username" id="user__input" />
 					<button type="submit" value="Search" id="search__button">Search</button>
 				</div>
-				<p id="error__message">error</p>
 			</div>
 
 			<div id="details__page" class="page hidden">
 				<div>
 					<!-- for on top of the page -->
-					<!-- using the same id's because technically there's only ONE of them in the DOM due to the navigation.js -->
 					<h1>Github Portfolio</h1>
 					<div class="searchbar">
-						<input type="text" placeholder="Github username" id="user__input" />
-						<button type="submit" value="Search" id="search__button">Search</button>
+						<input type="text" placeholder="Github username" id="user__input__details" />
+						<button type="submit" value="Search" id="search__button__details">Search</button>
 					</div>
-					<p id="error__message">error</p>
+					<p id="error__message__details">error</p>
 				</div>
 
 				<!-- portfolio details page -->
@@ -49,7 +47,7 @@
 				<section>
 					<div>
 						<h2 id="username">username</h2>
-						<img src="" alt="avatar image of Github profile" />
+						<img id="avatar" src="" alt="avatar image of Github profile" />
 					</div>
 					<div>
 						<p id="profile__description">description</p>
@@ -58,6 +56,7 @@
 				<!-- details project or repositories section -->
 				<section>
 					<h3>Projects</h3>
+					<div id="projects"></div>
 					<!-- for every repository of repositories: section > h4 - p for description - p for deployed link -->
 				</section>
 			</div>
