@@ -1,9 +1,7 @@
-import { getUsername } from "./dom.js";
-
 // https://api.github.com/users/rvdegroen/repos
-export async function getUserRepositories() {
+export async function getUserRepositories(username) {
   try {
-    const username = getUsername();
+    // const username = getUsername();
     // https://api.github.com/users/${username}/repos`
     const response = await fetch(`https://api.github.com/users/${username}/repos`);
     const json = await response.json();
