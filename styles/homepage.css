@@ -25,17 +25,21 @@ input[type="text"]:focus {
   outline: none;
 }
 
+/* search */
 button[type="submit"] {
   position: absolute;
-  background: var(--color-buttons-links);
+  background: var(--color-buttons);
   transform: translateX(-2px);
   border-radius: 0 6px 6px 0;
   padding: 0.5em;
-  color: var(--text-buttons-links);
+  color: var(--text-buttons);
   border: 2px solid var(--lines-button);
   font-weight: 600;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background: var(--color-buttons-hover);
 }
 
 /* searchbar div to put button and search together*/
