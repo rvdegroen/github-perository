@@ -3,6 +3,7 @@
 @import url("./homepage.css");
 @import url("./nav.css");
 @import url("./details.css");
+@import url("./searchbar.css");
 
 * {
 	box-sizing: border-box;
