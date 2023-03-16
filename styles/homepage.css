@@ -19,11 +19,12 @@ input[type="text"] {
   padding: 0.5em;
   background: var(--background-input);
   color: var(--text-color-icons);
+  font-size: var(--input);
 }
 
 input[type="text"]:focus {
   outline: none;
-  border: solid 2px var(--lines-focus);
+  border: solid 2px var(--color-buttons);
 }
 
 /* search */
@@ -34,16 +35,18 @@ button[type="submit"] {
   border-radius: 0 6px 6px 0;
   padding: 0.5em;
   color: var(--text-buttons);
-  border: 2px solid var(--lines-button);
+  border: 2px solid var(--color-buttons);
   font-weight: 600;
   cursor: pointer;
+  font-size: var(--input);
 }
 
 button[type="submit"]:hover {
   background: var(--color-buttons-hover);
+  border: 2px solid var(--color-buttons-hover);
 }
 
 /* searchbar div to put button and search together*/
 .searchbar {
-  transform: translateX(-1.7em);
+  transform: translateX(-2em);
 }

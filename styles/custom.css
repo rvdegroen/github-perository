@@ -13,11 +13,13 @@
   --warning-color: #ffd33d;
   --error-color: #cb2431;
   --lines: #d0d7de;
-  --lines-button: #28a745;
   --switch-bg: #262626;
   --switch-box-shadow: 0px 0px 5px #0000003f;
+  /* font-sizes */
+  --input: 0.9em;
 }
 
+/* global dark mode */
 body:has(#darkmode:checked) {
   --background-color: #161b22;
   --background-input: #0d1117;
