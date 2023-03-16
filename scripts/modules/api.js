@@ -1,3 +1,5 @@
+import { getUsername } from "./dom.js";
+
 // https://api.github.com/users/rvdegroen/repos
 export async function getUserRepositories() {
   try {
@@ -5,8 +7,8 @@ export async function getUserRepositories() {
     // https://api.github.com/users/${username}/repos`
     const response = await fetch(`https://api.github.com/users/${username}/repos`);
     const json = await response.json();
+    // client side error
     if (response.status >= 400 && response.status <= 499) {
-      // client side error
       const clientErrorMessage = json.message;
       // new instance of error class
       throw new Error(clientErrorMessage);
