@@ -23,6 +23,7 @@ input[type="text"] {
 
 input[type="text"]:focus {
   outline: none;
+  border: solid 2px var(--lines-focus);
 }
 
 /* search */
