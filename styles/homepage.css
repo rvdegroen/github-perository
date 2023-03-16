@@ -46,6 +46,11 @@ button[type="submit"]:hover {
   border: 2px solid var(--color-buttons-hover);
 }
 
+button[type="submit"]:active {
+  background: var(--color-buttons);
+  border: 2px solid var(--color-buttons);
+}
+
 /* searchbar div to put button and search together*/
 .searchbar {
   transform: translateX(-2em);
