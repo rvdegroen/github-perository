@@ -1,3 +1,4 @@
+/* search bar div */
 #details__page > div {
 	display: flex;
 	flex-direction: column;
@@ -7,4 +8,19 @@
 
 #details__page .searchbar {
 	transform: translateX(0em);
+}
+
+/* details of github profile */
+#details__page section {
+	display: flex;
+	padding: 0em 2em;
+	gap: 2em;
+}
+
+/*  */
+
+/* error message */
+#error__message__details {
+	color: var(--error-color);
+	font-weight: 600;
 }
