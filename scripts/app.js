@@ -18,24 +18,29 @@ export async function getUserRepositories() {
     // https://api.github.com/users/${username}/repos`
     const response = await fetch(`https://api.github.com/users/${username}/repos`);
     const json = await response.json();
-    //  return repos
+    if (response.status >= 400 && response.status <= 499) {
+      // client side error
+      const clientErrorMessage = json.message;
+      // new instance of error class
+      throw new Error(clientErrorMessage);
+    }
+    // return repos
     console.log(json);
     return json;
   } catch (error) {
+    // server side error
     console.log(error.message);
     const $errorMessage = document.getElementById("error__message");
-    const errorM = error.message;
-    $errorMessage.textContent = errorM;
+    const errorMessage = error.message;
+    $errorMessage.textContent = errorMessage;
   }
 }
 
-getUserRepositories();
-
 export function getUsername() {
-  const $userInput = document.getElementById("#user__input");
+  const $userInput = document.getElementById("user__input");
   const username = $userInput.value;
   return username;
 }
 
-// const $searchButton = document.getElementById("#search__button");
-// $searchButton.addEventListener("click", getUserRepositories());
+const $searchButton = document.getElementById("search__button");
+$searchButton.addEventListener("click", getUserRepositories);
