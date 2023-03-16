@@ -8,12 +8,12 @@
   --color-buttons-hover: #2ea043;
   --text-buttons: #ffffff;
   --hyper-links: #0366d6;
+  --accent-color: #58a6ff;
   --secondary-buttons: #6f42c1;
   --warning-color: #ffd33d;
   --error-color: #cb2431;
   --lines: #d0d7de;
   --lines-button: #28a745;
-  --lines-focus: #58a6ff;
   --switch-bg: #262626;
   --switch-box-shadow: 0px 0px 5px #0000003f;
 }
