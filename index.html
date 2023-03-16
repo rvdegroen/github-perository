@@ -23,15 +23,35 @@
       <input id="darkmode" type="checkbox">
     </nav>
     <main>
-        <div id="homepage">
+        <div id="homepage" class="page hidden">
             <h1>Github Portfolio</h1>
             <div class="searchbar">
             <input type="text" placeholder="Github username" id="user__input"/>
             <button type="submit" value="Search" id="search__button">Search</button>
             </div>
-            <p id="error__message"></p>
+            <p id="error__message">error</p>
         </div>
     
+        <div id="details__page" class="page hidden">
+          <h1>Github Portfolio</h1>
+            <div class="searchbar">
+            <input type="text" placeholder="Github username" id="user__input"/>
+            <button type="submit" value="Search" id="search__button">Search</button>
+            </div>
+            
+
+            <div>
+              <h2 id="username">HERE SHOULD BE THE USERNAME</h2>
+              <img src="" alt="image of the user">  
+            </div>
+            <div>
+              <p>here your description</p>
+            </div>
+            <section>
+              <h3>Projects</h3>
+              <!-- for every project: <h4> <div> <p> description </p> </div> -->
+            </section>
+        </div>
     </main>
     </div>
   </body>
