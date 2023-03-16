@@ -1,58 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Github Porfolio</title>
-    <!-- fonts work sans, weight: 300, 400, 600-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
-    <!-- css -->
-    <link rel="stylesheet" href="./styles/main.css" />
-    <!-- js -->
-    <script src="./scripts/app.js" type="module" defer></script>
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Github Porfolio</title>
+		<!-- fonts work sans, weight: 300, 400, 600-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- css -->
+		<link rel="stylesheet" href="./styles/main.css" />
+		<!-- js -->
+		<script src="./scripts/app.js" type="module" defer></script>
+	</head>
 
-  <body>
-    <nav>
-      <input id="darkmode" type="checkbox">
-    </nav>
-    <main>
-        <div id="homepage" class="page hidden">
-            <h1>Github Portfolio</h1>
-            <div class="searchbar">
-            <input type="text" placeholder="Github username" id="user__input"/>
-            <button type="submit" value="Search" id="search__button">Search</button>
-            </div>
-            <p id="error__message">error</p>
-        </div>
-    
-        <div id="details__page" class="page hidden">
-          <h1>Github Portfolio</h1>
-            <div class="searchbar">
-            <input type="text" placeholder="Github username" id="user__input"/>
-            <button type="submit" value="Search" id="search__button">Search</button>
-            </div>
-            
+	<body>
+		<nav>
+			<input id="darkmode" type="checkbox" />
+		</nav>
+		<main>
+			<div id="homepage" class="page hidden">
+				<h1>Github Portfolio</h1>
+				<div class="searchbar">
+					<input type="text" placeholder="Github username" id="user__input" />
+					<button type="submit" value="Search" id="search__button">Search</button>
+				</div>
+				<p id="error__message">error</p>
+			</div>
 
-            <div>
-              <h2 id="username">HERE SHOULD BE THE USERNAME</h2>
-              <img src="" alt="image of the user">  
-            </div>
-            <div>
-              <p>here your description</p>
-            </div>
-            <section>
-              <h3>Projects</h3>
-              <!-- for every project: <h4> <div> <p> description </p> </div> -->
-            </section>
-        </div>
-    </main>
-    </div>
-  </body>
+			<div id="details__page" class="page hidden">
+				<div>
+					<!-- for on top of the page -->
+					<!-- using the same id's because technically there's only ONE of them in the DOM due to the navigation.js -->
+					<h1>Github Portfolio</h1>
+					<div class="searchbar">
+						<input type="text" placeholder="Github username" id="user__input" />
+						<button type="submit" value="Search" id="search__button">Search</button>
+					</div>
+					<p id="error__message">error</p>
+				</div>
+
+				<!-- portfolio details page -->
+				<!-- details profile section -->
+				<section>
+					<div>
+						<h2 id="username">username</h2>
+						<img src="" alt="avatar image of Github profile" />
+					</div>
+					<div>
+						<p id="profile__description">description</p>
+					</div>
+				</section>
+				<!-- details project or repositories section -->
+				<section>
+					<h3>Projects</h3>
+					<!-- for every repository of repositories: section > h4 - p for description - p for deployed link -->
+				</section>
+			</div>
+		</main>
+	</body>
 </html>
