@@ -2,49 +2,50 @@
 
 /* nav */
 nav {
-  position: absolute;
-  width: 100vw;
-  /* background-color: red; */
-  padding: 1em 1.5em;
-  display: flex;
-  justify-content: flex-end;
+	position: absolute;
+	width: 100vw;
+	/* background-color: red; */
+	padding: 1em 1.5em;
+	display: flex;
+	justify-content: flex-end;
 }
 
 /* dark / light mode button */
 nav > input {
-  outline: none;
-  border: none;
-  margin: none;
-  padding: none;
-  appearance: none;
-  background-color: var(--switch-bg);
-  cursor: pointer;
-  border-radius: 2em;
-  box-shadow: var(--switch-box-shadow);
-  width: 3em;
-  height: 3em;
+	outline: none;
+	border: none;
+	margin: none;
+	padding: none;
+	appearance: none;
+	background-color: var(--switch-bg);
+	cursor: pointer;
+	border-radius: 2em;
+	box-shadow: var(--switch-box-shadow);
+	width: 3em;
+	height: 3em;
+	z-index: 2;
 }
 
 /* dark / light mode button: half circle on top*/
 nav > input::before {
-  content: "";
-  background-color: var(--background-color) !important ;
-  width: 1em;
-  height: 2em;
-  position: absolute;
-  top: 1.7em;
-  right: 2.3em;
-  border-radius: 0 1em 1em 0;
+	content: "";
+	background-color: var(--background-color) !important ;
+	width: 1em;
+	height: 2em;
+	position: absolute;
+	top: 1.7em;
+	right: 2.3em;
+	border-radius: 0 1em 1em 0;
 }
 
 nav > input:hover {
-  background-color: var(--color-buttons-hover);
+	background-color: var(--color-buttons-hover);
 }
 
 nav > input:active {
-  background-color: var(--color-buttons);
+	background-color: var(--color-buttons);
 }
 
 nav > input:active {
-  opacity: 80%;
+	opacity: 80%;
 }
