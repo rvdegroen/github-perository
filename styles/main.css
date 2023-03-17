@@ -25,4 +25,26 @@ body {
 	transition: 0.2s ease-in-out;
 	background: var(--background-color);
 	color: var(--text-color-icons);
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 455px) {
+	/* for search bar */
+	input[type="text"] {
+		font-size: var(--input-mobile);
+	}
+
+	button[type="submit"] {
+		font-size: var(--input-mobile);
+	}
+
+	/* for dark light mode btn */
+	nav {
+		right: -2em;
+		top: 1em;
+	}
+
+	img {
+		width: 12em;
+	}
 }
