@@ -54,23 +54,28 @@ routie({
 
 				// create elements
 				const div = document.createElement("div");
-				const h3 = document.createElement("h3");
+				const h4 = document.createElement("h4");
 				const anchor = document.createElement("a");
 				const p = document.createElement("p");
 
 				// add data to created html
-				h3.textContent = name;
+				h4.textContent = name;
 				p.textContent = description;
 				anchor.href = url;
 				anchor.textContent = "Open project in github";
 
 				// appending
-				div.appendChild(h3);
+				div.appendChild(h4);
 				div.appendChild(p);
 				div.appendChild(anchor);
 
 				// For every repo, put the div into $projects div
 				$projects.appendChild(div);
+
+				// hide description if null
+				if ($description === "") {
+					$description.classList.add("hidden");
+				}
 			}
 		} catch (error) {
 			// server side error
