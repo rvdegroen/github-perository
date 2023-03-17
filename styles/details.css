@@ -26,7 +26,7 @@ img {
 #details__page section {
 	display: flex;
 	padding: 0em 2em;
-	gap: 2em;
+	gap: 1em;
 }
 
 /* syling for section profile */
@@ -55,6 +55,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	width: 300px;
 }
 
 #profile__description {
@@ -62,4 +63,27 @@ img {
 
 	padding: 1em;
 	border-radius: 10px;
+}
+
+#details__page section:nth-of-type(2) {
+	display: flex;
+	flex-direction: column;
+}
+
+.project__section {
+	width: 50vw;
+}
+
+.project__section a {
+	margin-top: 3em !important;
+	color: var(--hyper-links);
+	text-decoration: none;
+}
+
+.project__section h4 {
+	margin: 1.5em 0 0.3em 0;
+}
+
+.project__section p {
+	color: var(--color-buttons-links);
 }
